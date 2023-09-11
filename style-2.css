@@ -1,0 +1,149 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px; /*#*/
+}
+
+.chart1 { /*#*/
+    display: flex;
+    border: 0px solid rgb(0, 255, 42);
+    justify-content:center; /*#*/
+}
+
+
+
+.chartContainer {
+    display: flex;
+    flex-direction: column;
+    border: 0px solid rgb(17, 0, 255);
+    justify-content: center;
+    text-align: center;
+    line-height: 0px; /*#*/
+}
+
+.axis text {
+    font-weight: bold;
+}
+
+.y-axis text {
+    text-anchor: end;
+}
+
+.axis path {
+    display: none;
+}
+
+.axis line {
+    stroke-opacity: 0.2; /*#*/
+}
+
+.line {
+    fill: none;
+    stroke: steelblue;
+    stroke-width: 0.5px; /*#*/
+}
+
+.reset-zoom-button1 {  /*#*/
+    cursor: pointer;
+}
+
+.legend-item1 {
+    cursor: pointer;
+}
+
+.legend-item1:hover {
+    text-decoration: underline;
+}
+
+.extra-options-container1 {
+    border: 0px solid rgb(17, 0, 255); /*#*/
+    font-size: 14px;
+    display: flex;
+    justify-content:space-evenly;
+}
+
+.hide-all-option1, .show-all-option1 {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.hide-all-option1:hover, .show-all-option1:hover {
+    text-decoration: none;
+}
+
+.voronoi path {
+    fill: none;
+    pointer-events: all;
+}
+
+.type-hover {
+    stroke: #000;
+    stroke-width: 3px; /*#*/
+}
+
+.legendsDate1 text { /*#*/
+    font-weight: bold; /*#*/
+}
+
+.legend1 {
+    border: 0px solid rgb(209, 255, 6); /*#*/
+    align-content: center; /*#*/
+}
+
+.chart-button {
+    cursor: pointer;
+}
+
+.header1 {
+    border: 0px solid rgb(0, 255, 42); /*#*/
+    display: flex;
+    justify-content:center; /*#*/
+    flex-direction: row; /*#*/
+    align-items: center; /*#*/
+    text-align: left;
+}
+
+.header2 {
+    border: 0px solid rgb(0, 255, 42); /*#*/
+    display: flex;
+    justify-content:center; /*#*/
+    flex-direction: row; /*#*/
+    align-items: center; /*#*/
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.title1 {
+    border: 0px solid red; /*#*/
+    /*font-size: 0px; #*/
+
+    /*padding-left: 0px; /*#*/
+    text-align: center;
+}
+
+.previewTitle {
+    border: 0px solid red; /*#*/
+    display:flex;
+    flex-direction: column; /*#*/
+    font-size: 14px; /*#*/
+    line-height: 20px; /*#*/
+}
+
+.preview1 {
+    border: 0px solid red; /*#*/
+    display:flex;
+    padding-right: 30px;
+}
+
+.preview-rect1 {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.preview-axis.x-axis .tick:nth-child(2) text {
+    text-anchor: start;
+}
+
+.preview-axis.x-axis .tick:nth-child(3) text {
+    text-anchor: end;
+}

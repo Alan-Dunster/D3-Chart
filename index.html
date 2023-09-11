@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cardiff Bute Park Air Quality 2016</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+
+  <script src="https://d3js.org/d3.v5.js"></script>
+
+  <script src="/main-1.js"></script>
+  
+  <div class="header1">
+    <div class="title1">
+    <h1>Temperature and Air Quality in Cardiff</h1>
+
+    <h3>The data presented in this visualisation clearly shows pollution levels increase as temperatures fall, 
+      except for Ozone levels, which appear to do the opposite.</h3>
+    
+    <h3>Chart 1 shows the variation of the daily measures from their annual averges (0% baseline). 
+      Comparing measures to a basline is useful when the scale range between some measures (i.e. Carbon Monoxide) 
+      is too small to compare easily with others (i.e. Nitric Oxide). 
+      Chart 2 represents the actual daily measures. Whilst the same trends can be observed by zoomimng in, 
+      this chart is made available so the viewer can see both perspectives.</h3>  
+<hr>
+  </div>
+  </div>
+  
+  <div class="header2">
+
+      <div class="previewTitle">
+        <br>Zoom navigation
+        <div class="preview1"></div>
+        <p>Double click mouse or scroll mouse wheel forward in main chart below to zoom in.<br>
+        Then click and hold zoom area above with mouse to move and navigate main chart.</p>
+
+    <button class="reset-zoom-button1">Reset zoom</button>    
+  </div>
+    <div class="legend1"></div>
+
+  </div>
+
+  <br>
+    
+  <div class="chartContainer">
+    <h2>Chart 1: Percent variation above or below the annual averaged baseline (0%) for each indicator during 2016.</h2>
+    <button class="chart-button" onclick="document.location='chart-2.html'">Click here for Chart 2: Actual daily levels (µg/m³) for each pollution indicator and max temp (°C) during 2016.</button>
+    <div class="chart1"></div>
+    
+    <p>Mouse over a line on the main chart and it will be highlighted as well as show as the active line in the zoom navigator.</p>
+      <p>Click on a line in the main chart will make it the active line and become highlighted in the legend.</p>
+        <p>Mousing over a line will reveal a black dote which corresponds to the date and data shown in the legend.</p>
+          <p>To aid comparison, each type of indicator can be selected and deselected by clicking on them in the legend.</p>
+
+  
+  </div>
+
+</body>
+
+</html>
